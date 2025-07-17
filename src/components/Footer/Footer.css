@@ -1,0 +1,12 @@
+.footer-neon {
+  background-color: #121212;
+  border-top: 2px solid #1e1e1e;
+  color: #ccc;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.footer-neon small {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+}

@@ -1,0 +1,111 @@
+/* Overall Section Styling */
+.projects-section {
+  background-color: #212529;
+  color: #fff;
+  padding-top: 0;
+}
+
+/* Section Heading */
+.section-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00ffff;
+  text-shadow: 0 0 10px #5c6969;
+}
+
+/* Project Card Container */
+.project-card {
+  background-color: #2a2f36;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 8px #00ffff;
+  position: relative;
+}
+
+/* Project Image Wrapper */
+.project-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1);
+}
+
+/* Hover Overlay */
+.project-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Darken image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+}
+
+.project-card:hover .project-hover-overlay {
+  opacity: 1;
+}
+
+/* Neon Button Style */
+.project-hover-overlay .neon-button {
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  color: #00ffff;
+  background-color: transparent;
+  border: 2px solid #00ffff;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  text-shadow: none;
+  box-shadow: none;
+  z-index: 3;
+}
+
+.project-hover-overlay .neon-button:hover {
+  background-color: rgba(0, 255, 255, 0.08);
+}
+
+/* Project Title */
+.project-title {
+  font-weight: bold;
+  color: #00ffff;
+  text-shadow: none;
+}
+
+/* Project Description */
+.project-description {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* Neon Border Utility */
+.neon-border {
+  border: 1px solid #00ffff33;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 2rem;
+  }
+
+  .project-image-wrapper {
+    height: 180px;
+  }
+}

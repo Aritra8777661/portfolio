@@ -1,0 +1,62 @@
+/* Neon Profile Image */
+.neon-img {
+  box-shadow: 0 0 25px #00ffff, 0 0 40px #00ffff;
+  transition: box-shadow 0.3s ease;
+}
+.neon-img:hover {
+  box-shadow: 0 0 40px #00ffff, 0 0 60px #00ffff;
+}
+
+/* Neon Button */
+.neon-btn {
+  background-color: #0ff;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+.neon-btn:hover {
+  box-shadow: 0 0 20px #0ff, 0 0 30px #0ff;
+  color: #000;
+}
+
+/* Neon Social Icons */
+.social-icons a {
+  color: #0ff;
+  transition: 0.3s;
+  box-shadow: 0 0 6px #0ff;
+  padding: 8px;
+  border-radius: 50%;
+}
+.social-icons a:hover {
+  color: #000;
+  background: #0ff;
+  box-shadow: 0 0 15px #0ff, 0 0 25px #0ff;
+}
+
+/* Scroll Down Arrow */
+.scroll-down-indicator {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-arrow-icon {
+  font-size: 3.5rem;
+  color: #0ff;
+  animation: upDown 2s infinite;
+  text-shadow: 0 0 8px #0ff, 0 0 15px #0ff;
+}
+
+@keyframes upDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
